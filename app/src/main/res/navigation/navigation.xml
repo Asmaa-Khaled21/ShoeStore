@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/insructionOneFragment">
+    <fragment
+        android:id="@+id/insructionOneFragment"
+        android:name="com.udacity.shoestore.InsructionOneFragment"
+        android:label="fragment_insruction_one"
+        tools:layout="@layout/fragment_insruction_one" >
+        <action
+            android:id="@+id/action_insructionOneFragment_to_instrutionTwoFragment2"
+            app:destination="@id/instrutionTwoFragment2"
+            app:popUpTo="@id/instrutionTwoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/instrutionTwoFragment2"
+        android:name="com.udacity.shoestore.InstrutionTwoFragment"
+        android:label="fragment_instrution_two"
+        tools:layout="@layout/fragment_instrution_two" />
+</navigation>
