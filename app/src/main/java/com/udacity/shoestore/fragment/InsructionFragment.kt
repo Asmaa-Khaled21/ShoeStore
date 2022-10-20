@@ -20,8 +20,7 @@ class InsructionFragment : Fragment() {
             inflater, R.layout.fragment_insruction, container, false
         )
         binding.NextButton.setOnClickListener { view: View ->
-            view.findNavController()
-
+            view.findNavController().navigate(R.id.action_insructionFragment_to_itemFragment)
         }
         return binding.root
     }

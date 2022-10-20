@@ -17,5 +17,23 @@
         android:id="@+id/loginFragment"
         android:name="com.udacity.shoestore.fragment.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_insructionFragment"
+            app:destination="@id/insructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insructionFragment"
+        android:name="com.udacity.shoestore.fragment.InsructionFragment"
+        android:label="fragment_insruction"
+        tools:layout="@layout/fragment_insruction" >
+        <action
+            android:id="@+id/action_insructionFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.udacity.shoestore.fragment.ItemFragment"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item" />
 </navigation>
