@@ -3,20 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/insructionOneFragment">
+    app:startDestination="@id/splashFragment">
     <fragment
-        android:id="@+id/insructionOneFragment"
-        android:name="com.udacity.shoestore.InsructionOneFragment"
-        android:label="fragment_insruction_one"
-        tools:layout="@layout/fragment_insruction_one" >
+        android:id="@+id/splashFragment"
+        android:name="com.udacity.shoestore.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
         <action
-            android:id="@+id/action_insructionOneFragment_to_instrutionTwoFragment2"
-            app:destination="@id/instrutionTwoFragment2"
-            app:popUpTo="@id/instrutionTwoFragment2" />
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/instrutionTwoFragment2"
-        android:name="com.udacity.shoestore.InstrutionTwoFragment"
-        android:label="fragment_instrution_two"
-        tools:layout="@layout/fragment_instrution_two" />
+        android:id="@+id/loginFragment"
+        android:name="com.udacity.shoestore.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
 </navigation>
