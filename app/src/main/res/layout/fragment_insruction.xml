@@ -37,13 +37,11 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textone"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="10dp"
             android:text="* Add your Product be careful to describe your product carefully"
             android:textSize="20sp"
             android:textColor="@color/black"
-            android:padding="10dp"
-            android:layout_marginStart="15dp"
+            android:padding="20dp"
             />
         <TextView
             android:id="@+id/textthree"
@@ -51,12 +49,10 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/texttwo"
-            android:layout_marginTop="10dp"
             android:text="* Click save button"
             android:textSize="20sp"
             android:textColor="@color/black"
-            android:padding="10dp"
-            android:layout_marginStart="10dp"
+            android:padding="20dp"
             />
         <Button
             android:id="@+id/NextButton"
