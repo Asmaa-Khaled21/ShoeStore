@@ -2,11 +2,124 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.udacity.shoestore.fragment.AddItemFragment">
+   <data>
+      <variable
+          name="shoe"
+          type="com.udacity.shoestore.models.Shoe" />
+      <variable
+          name="sharedViewModel"
+          type="com.udacity.shoestore.models.SharedShoeViewModel" />
+   </data>
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:orientation="vertical"/>
+       android:orientation="vertical"
+       android:padding="20dp">
 
+      <TextView
+          android:id="@+id/Shoes_Name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Shoes Name"
+          android:layout_marginTop="10dp"/>
 
+      <EditText
+          android:id="@+id/editTextShoeName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="1dp"
+          android:ems="10"
+          android:hint="Shoes Name"
+          android:importantForAutofill="no"
+          android:inputType="text"
+          android:text="@={shoe.name}"
+          android:layout_marginTop="5dp"/>
+
+      <TextView
+          android:id="@+id/size"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Size"
+          android:layout_marginTop="10dp"/>
+
+      <EditText
+          android:id="@+id/editTextSize"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:layout_marginTop="5dp"
+          android:hint="Size"
+          android:importantForAutofill="no"
+          android:inputType="number"
+          android:text="@={`` + shoe.size}"
+          app:layout_constraintBottom_toBottomOf="@+id/textView3"
+          app:layout_constraintEnd_toEndOf="parent" />
+
+      <TextView
+          android:id="@+id/Company"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Company"
+          android:layout_marginTop="10dp"/>
+
+      <EditText
+          android:id="@+id/editTextCompany"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:layout_marginTop="5dp"
+          android:hint="Company"
+          android:importantForAutofill="no"
+          android:inputType="text"
+          android:text="@={shoe.company}"
+          app:layout_constraintBottom_toBottomOf="@+id/textView4"
+          app:layout_constraintEnd_toEndOf="parent" />
+
+      <TextView
+          android:id="@+id/description"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="description"
+          android:layout_marginTop="10dp"/>
+
+      <EditText
+          android:id="@+id/editTextDescription"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:ems="10"
+          android:hint="description"
+          android:importantForAutofill="no"
+          android:inputType="text"
+          android:text="@={shoe.description}" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+         android:gravity="center"
+          android:layout_margin="50dp">
+         <Button
+             android:id="@+id/save"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:onClick="@{(v)-> sharedViewModel.addShoe(v,shoe)}"
+             android:text="save"
+             android:layout_marginEnd="30dp"
+         />
+
+         <Button
+             android:id="@+id/cancel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:onClick="@{(v) -> sharedViewModel.navigateUp(v)}"
+             android:text="cancel"
+             android:layout_marginStart="30dp"
+             />
+
+      </LinearLayout>
+
+   </LinearLayout>
 </layout>

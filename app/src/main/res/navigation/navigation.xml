@@ -28,12 +28,26 @@
         android:label="fragment_insruction"
         tools:layout="@layout/fragment_insruction" >
         <action
-            android:id="@+id/action_insructionFragment_to_itemFragment"
-            app:destination="@id/itemFragment" />
+            android:id="@+id/action_insructionFragment_to_sheo_listFragment"
+            app:destination="@id/sheo_listFragment"
+            app:popUpTo="@id/insructionFragment" />
     </fragment>
     <fragment
-        android:id="@+id/itemFragment"
-        android:name="com.udacity.shoestore.fragment.ItemFragment"
-        android:label="fragment_item"
-        tools:layout="@layout/fragment_item" />
+        android:id="@+id/addItemFragment"
+        android:name="com.udacity.shoestore.fragment.AddItemFragment"
+        android:label="fragment_add_item"
+        tools:layout="@layout/fragment_add_item" >
+        <action
+            android:id="@+id/action_addItemFragment_to_sheo_listFragment"
+            app:destination="@id/sheo_listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sheo_listFragment"
+        android:name="com.udacity.shoestore.fragment.SheolistFragment"
+        android:label="fragment_sheo_list"
+        tools:layout="@layout/fragment_sheolist" >
+        <action
+            android:id="@+id/action_sheo_listFragment_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+    </fragment>
 </navigation>
