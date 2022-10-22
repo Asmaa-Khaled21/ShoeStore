@@ -18,7 +18,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_login"
-            android:layout_margin="80dp"
+            android:layout_margin="@dimen/space_80"
             />
 
         <TextView
@@ -27,8 +27,8 @@
             android:layout_height="wrap_content"
             android:text="Shoe"
             android:textColor="@android:color/black"
-            android:textSize="25sp"
-            android:layout_marginTop="30dp"
+            android:textSize="@dimen/size_25"
+            android:layout_marginTop="@dimen/space_30"
             app:layout_constraintStart_toStartOf="@id/image_login"
             app:layout_constraintTop_toBottomOf="@id/image_login"
             app:layout_constraintEnd_toStartOf="@id/text_store"
@@ -37,11 +37,11 @@
             android:id="@+id/text_store"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Store"
+            android:text="@string/store"
             android:textColor="@android:color/black"
-            android:textSize="25sp"
+            android:textSize="@dimen/size_25"
             android:textStyle="bold"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/space_30"
             app:layout_constraintStart_toEndOf="@id/text_shoe"
             app:layout_constraintTop_toBottomOf="@id/image_login"
             app:layout_constraintEnd_toEndOf="@id/image_login"
@@ -52,10 +52,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:textSize="25sp"
+            android:textSize="@dimen/size_25"
             android:textStyle="bold"
             android:textColor="@android:color/black"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/space_20"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_shoe"
             />
@@ -63,10 +63,10 @@
             android:id="@+id/Please_sign_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please sign in to continue"
-            android:textSize="15sp"
+            android:text="@string/please_sign_in_to_continue"
+            android:textSize="@dimen/size_15"
             android:textColor="@android:color/black"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="@dimen/space_15"
             app:layout_constraintStart_toStartOf="@id/text_login"
             app:layout_constraintTop_toBottomOf="@id/text_login"
             />
@@ -79,9 +79,9 @@
             app:layout_constraintStart_toStartOf="parent"
             android:hint="Email"
             android:layout_marginTop="40dp"
-            app:boxStrokeColor="#4E4A4A"
+            app:boxStrokeColor="@color/stroke"
             app:boxStrokeWidth="1dp"
-            android:textColorHint="#4E4A4A">
+            android:textColorHint="@color/hint">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/eMail"
                 android:layout_width="match_parent"
@@ -89,10 +89,10 @@
                 android:ems="10"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/Gray"
-                android:textSize="15sp"
+                android:textSize="@dimen/size_15"
                 android:textStyle="normal"
                 android:drawableStart="@drawable/ic_person"
-                android:drawablePadding="5dp"/>
+                android:drawablePadding="@dimen/space_5"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -102,11 +102,11 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/login"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="15dp"
-            android:hint="Password"
-            app:boxStrokeColor="#4E4A4A"
+            android:layout_marginTop="@dimen/space_15"
+            android:hint="@string/password"
+            app:boxStrokeColor="@color/stroke"
             app:boxStrokeWidth="1dp"
-            android:textColorHint="#4E4A4A">
+            android:textColorHint="@color/hint">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwords"
@@ -118,7 +118,7 @@
                 android:textSize="15sp"
                 android:textStyle="normal"
                 android:drawableEnd="@drawable/ic_eye"
-                android:drawablePadding="5dp"/>
+                android:drawablePadding="@dimen/space_5"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -128,8 +128,8 @@
             app:layout_constraintTop_toBottomOf="@id/password_frame"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_margin="20dp"
-            android:text="LOGIN"
+            android:layout_margin="@dimen/space_20"
+            android:text="@string/login"
             android:textColor="@color/colorPrimary"
             android:backgroundTint="@color/white"
             />

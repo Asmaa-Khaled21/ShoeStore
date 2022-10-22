@@ -16,7 +16,7 @@
           android:layout_height="wrap_content"
           android:text="Shoe"
           android:textColor="@android:color/black"
-          android:textSize="50sp"
+          android:textSize="@dimen/size_50"
           />
 
       <TextView

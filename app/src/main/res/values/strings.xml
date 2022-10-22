@@ -2,4 +2,18 @@
     <string name="app_name">ShoeStore</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shoes_name">Shoes Name</string>
+    <string name="size">Size</string>
+    <string name="description">description</string>
+    <string name="hurry_up_add_your_product">Hurry up add your product</string>
+    <string name="add_your_product">* Add your Product be careful to describe your product carefully</string>
+    <string name="click_save_button">* Click save button</string>
+    <string name="login">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="please_sign_in_to_continue">Please sign in to continue</string>
+    <string name="store">Store</string>
+    <string name="Description"><![CDATA[Description ->]]></string>
+    <string name="company"><![CDATA[Company ->]]></string>
+    <string name="Size"><![CDATA[Size ->]]></string>
+    <string name="modelname"><![CDATA[ModelName ->]]></string>
 </resources>

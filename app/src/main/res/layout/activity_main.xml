@@ -9,7 +9,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginTop="60dp">
+            android:layout_marginTop="@dimen/margin_40">
             <androidx.fragment.app.FragmentContainerView
                 tools:context=".MainActivity"
                 android:id="@+id/myNavHostFragment"

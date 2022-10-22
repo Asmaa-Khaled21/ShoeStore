@@ -11,5 +11,7 @@
     <color name="Background">#CB4153</color>
     <color name="TransparentColor">#00FFFFFF</color>
     <color name="textColor">#FFFFFFFF</color>
+    <color name="stroke">#4E4A4A</color>
+    <color name="hint">#4E4A4A</color>
 
 </resources>

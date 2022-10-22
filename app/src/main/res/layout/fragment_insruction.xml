@@ -24,12 +24,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/Image_heels"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="50dp"
-            android:text="Hurry up add your product"
+            android:layout_marginTop="@dimen/space_50"
+            android:text="@string/hurry_up_add_your_product"
             android:textStyle="bold"
-            android:textSize="30sp"
+            android:textSize="@dimen/size_30"
             android:textColor="@color/black"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/space_20"
             />
         <TextView
             android:id="@+id/texttwo"
@@ -38,10 +38,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textone"
             android:layout_marginTop="10dp"
-            android:text="* Add your Product be careful to describe your product carefully"
-            android:textSize="20sp"
+            android:text="@string/add_your_product"
+            android:textSize="@dimen/size_20"
             android:textColor="@color/black"
-            android:padding="20dp"
+            android:padding="@dimen/space_20"
             />
         <TextView
             android:id="@+id/textthree"
@@ -49,10 +49,10 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/texttwo"
-            android:text="* Click save button"
-            android:textSize="20sp"
+            android:text="@string/click_save_button"
+            android:textSize="@dimen/size_20"
             android:textColor="@color/black"
-            android:padding="15dp"
+            android:padding="@dimen/space_15"
             />
         <Button
             android:id="@+id/NextButton"
@@ -63,8 +63,9 @@
             android:text="Next"
             android:textColor="@color/colorPrimary"
             android:backgroundTint="@color/white"
-            android:layout_marginEnd="50dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginEnd="@dimen/space_50"
+            android:layout_marginTop="@dimen/space_40"
+            android:textSize="@dimen/size_20"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
