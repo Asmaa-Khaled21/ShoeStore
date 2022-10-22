@@ -8,6 +8,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentLoginBinding
@@ -18,7 +19,7 @@ import com.udacity.shoestore.models.SharedShoeViewModel
 class SheolistFragment : Fragment() {
 
     private lateinit var binding: FragmentSheolistBinding
-    private lateinit var sharedViewModel: SharedShoeViewModel
+    private lateinit var sharedShoeViewModel: SharedShoeViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,9 +30,9 @@ class SheolistFragment : Fragment() {
             inflater, R.layout.fragment_sheolist, container, false)
         setHasOptionsMenu(true)
 
-        sharedViewModel = ViewModelProvider(requireActivity()).get(SharedShoeViewModel::class.java)
+        sharedShoeViewModel = ViewModelProvider(requireActivity()).get(SharedShoeViewModel::class.java)
 
-        sharedViewModel.shoe.observe(viewLifecycleOwner, Observer {
+        sharedShoeViewModel.shoe.observe(viewLifecycleOwner, Observer {
             for (shoe in it) {
 
                 DataBindingUtil.inflate<ItemBinding>(
@@ -44,9 +45,9 @@ class SheolistFragment : Fragment() {
 
                 } }
         })
-        binding.fab.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_sheo_listFragment_to_addItemFragment)
-        )
+        binding.fab.setOnClickListener{
+            findNavController().navigate(R.id.action_sheo_listFragment_to_addItemFragment)
+        }
         return binding.root
     }
 

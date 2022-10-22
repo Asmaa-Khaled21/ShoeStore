@@ -11,7 +11,6 @@ import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentAddItemBinding
 import com.udacity.shoestore.models.SharedShoeViewModel
 import com.udacity.shoestore.models.Shoe
-import kotlinx.android.synthetic.main.fragment_add_item.*
 
 class AddItemFragment : Fragment() {
     private lateinit var sharedShoeViewModel: SharedShoeViewModel
@@ -25,10 +24,10 @@ class AddItemFragment : Fragment() {
            inflater, R.layout.fragment_add_item,container,false
        )
 
-        sharedShoeViewModel = ViewModelProvider(requireActivity()).get(sharedShoeViewModel::class.java)
+        sharedShoeViewModel = ViewModelProvider(requireActivity()).get(SharedShoeViewModel::class.java)
 
         binding.sharedViewModel = sharedShoeViewModel
-        binding.shoe= Shoe("",0.0,"","")
+        binding.shoe= Shoe("",0.0,"","",0)
 
         return binding.root
     }
