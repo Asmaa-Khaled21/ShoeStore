@@ -12,12 +12,14 @@
           name="sharedViewModel"
           type="com.udacity.shoestore.models.SharedShoeViewModel" />
    </data>
+  <!--   Add New Shoes -->
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:orientation="vertical"
        android:padding="@dimen/space_20">
 
+      <!--   Add New Shoes Name -->
       <TextView
           android:id="@+id/Shoes_Name"
           android:layout_width="wrap_content"
@@ -38,7 +40,7 @@
           android:text="@={shoe.name}"
           android:textSize="@dimen/size_15"
           android:layout_marginTop="@dimen/space_5"/>
-
+      <!--   Add New Shoes Size -->
       <TextView
           android:id="@+id/size"
           android:layout_width="wrap_content"
@@ -57,8 +59,9 @@
           android:textSize="@dimen/size_15"
           android:importantForAutofill="no"
           android:inputType="number"
-          android:text="@={`` + shoe.size}" />
-
+          android:text="@={`` + shoe.size}"
+          />
+      <!--   Add New Shoes Company-->
       <TextView
           android:id="@+id/Company"
           android:layout_width="wrap_content"
@@ -79,6 +82,7 @@
           android:inputType="text"
           android:text="@={shoe.company}" />
 
+      <!--   Add New Shoes Description -->
       <TextView
           android:id="@+id/description"
           android:layout_width="wrap_content"
@@ -105,6 +109,8 @@
           android:orientation="horizontal"
           android:gravity="center"
           android:layout_margin="@dimen/space_50">
+
+         <!--   Add New Shoes Button -->
          <Button
              android:id="@+id/save"
              android:layout_width="wrap_content"
@@ -114,6 +120,7 @@
              android:textSize="@dimen/size_20"
              android:layout_marginEnd="@dimen/space_30" />
 
+         <!--   Cancel Button -->
          <Button
              android:id="@+id/cancel"
              android:layout_width="wrap_content"

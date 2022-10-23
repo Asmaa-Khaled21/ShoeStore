@@ -8,6 +8,7 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+<!--    View Item to add in shoelist-fragment-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -38,6 +39,8 @@
                     android:orientation="vertical"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
+
+        <!-- ADD NEW SHOES NAME-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -52,6 +55,8 @@
                             android:layout_height="wrap_content"
                             android:text="@={shoe.name}" />
                     </LinearLayout>
+
+        <!-- ADD NEW SHOES SIZE-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -66,6 +71,8 @@
                             android:layout_height="wrap_content"
                             android:text="@{Double.toString(shoe.size)}" />
                     </LinearLayout>
+
+    <!-- ADD NEW SHOES cOMPANY-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -80,6 +87,8 @@
                             android:layout_height="wrap_content"
                             android:text="@{shoe.company}" />
                     </LinearLayout>
+
+    <!-- ADD NEW SHOES dESCRIPTION-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

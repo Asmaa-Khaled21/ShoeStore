@@ -1,6 +1,9 @@
 package com.udacity.shoestore.models
 
 import android.view.View
+import android.widget.EditText
+import androidx.annotation.Size
+import androidx.databinding.InverseMethod
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
